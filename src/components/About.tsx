@@ -1,15 +1,20 @@
 const About = () => (
-  <section id="about" className="py-10">
+  <section
+    id="about"
+    className="py-10 flex flex-col justify-center items-start gap-8"
+  >
     <h2 className="text-3xl font-bold">
       <span className="text-indigo-500">01. </span> &lt;a little about me&gt;
     </h2>
-    <p className="mt-5">
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente non
-      animi aliquam dolore voluptatibus voluptates impedit eaque veritatis
-      quasi. Numquam non, labore vero quibusdam sunt obcaecati placeat animi
-      omnis aperiam!
+    <p className="text-xl">
+      I'm a Frontend Web Developer building the Front-end of Websites and Web
+      Applications that leads to the success of the overall product. Check out
+      some of my work in the Projects section.
       <br />
     </p>
+    <h2 className="text-3xl font-bold text-gray-300 self-end">
+      &lt;/a little about me&gt;
+    </h2>
   </section>
 );
 

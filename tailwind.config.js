@@ -7,7 +7,7 @@ export default {
         rubik: ['"Rubik"', "sans-serif"],
       },
       backgroundImage: {
-        bg: "url('/assets/bg4.jpeg')",
+        bg: "url('/assets/bg.jpeg')",
       },
     },
   },

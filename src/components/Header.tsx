@@ -1,19 +1,21 @@
 const Header = () => (
   <header className="text-center py-10">
-    <div className="flex w-full justify-between items-end">
-      <h1 className="text-5xl font-bold text flex flex-col justify-start items-start gap-4">
-        <div className="flex gap-4 text-gray-800">
-          Hi, I’m <h2 className="text-indigo-500">Mohammadreza</h2> <br />
-        </div>
-        <h2 className="text-indigo-500">web developer</h2>
+    <div className="flex w-full sm:flex-row flex-col justify-between items-start sm:items-center relative gap-4">
+      <h1 className="sm:text-4xl lg:text-6xl text-3xl w-full text-start font-bold text flex flex-col justify-start items-start gap-2">
+        <div className="text-gray-800">Hi, I’m Mohammadreza</div>
+        <h2 className="text-indigo-500">Frontend developer</h2>
       </h1>
-      <img src="/assets/images/avatar.jpg" className="w-36" />
+      <img
+        src="/assets/images/avatar.jpg"
+        className="sm:w-48 lg:w-60 w-full avatar relative border-t-[8px] border-r-[8px] shadow-lg border-indigo-500"
+      />
     </div>
     <div className="flex flex-col w-full text-left mt-12 justify-start items-start gap-8">
-      <p>
-        I’m a full-stack web developer, making great stuff happen since 2012.
-        Currently building awesome tools for developers at{" "}
-        <span className="text-indigo-500">Prezly.</span>
+      <p className="text-xl">
+        Hello, my name is Mohammadreza. I am a Frontend developer with a passion
+        for creating <span className="text-indigo-500">dynamic </span>
+        and <span className="text-indigo-500">responsive </span>
+        websites.
       </p>
       <a
         href="#contact"

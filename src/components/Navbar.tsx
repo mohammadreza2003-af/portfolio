@@ -1,41 +1,17 @@
-// src/components/Navbar.tsx
 import { useState } from "react";
 import { Menu } from "@headlessui/react";
-// import menuIcon from "@iconify/icons-mdi/menu";
-// import closeIcon from "@iconify/icons-mdi/close";
+import { Icon } from "@iconify/react/dist/iconify.js";
+import { navLinks } from "../constants/data";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-
-  const navLinks = [
-    {
-      name: "about",
-      href: "#about",
-    },
-    {
-      name: "skills",
-      href: "#skills",
-    },
-    {
-      name: "portfolio",
-      href: "#portfolio",
-    },
-    {
-      name: "work",
-      href: "#work",
-    },
-    {
-      name: "contact",
-      href: "#contact",
-    },
-  ];
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
   return (
-    <nav className="text-white p-4 w-full">
+    <nav className="text-white bg-white shadow-md p-8 w-full fixed top-0 z-20">
       <div className="mx-auto flex justify-end items-center">
         <ul className="hidden md:flex gap-x-8">
           {navLinks.map((item, index) => (
@@ -55,20 +31,34 @@ const Navbar = () => {
         </ul>
         <div className="md:hidden fixed">
           <button onClick={toggleMenu} aria-label="Menu">
-            {/* <Icon icon={isOpen ? "😀" : "😁"} className="w-6 h-6" /> */}
-            {isOpen ? "😀" : "😁"}
+            {isOpen ? (
+              <Icon
+                icon="ep:close-bold"
+                className="text-indigo-500"
+                width="24px"
+                height="24px"
+              />
+            ) : (
+              <Icon
+                icon="charm:menu-hamburger"
+                className="text-indigo-500"
+                width="24px"
+                height="24px"
+              />
+            )}
           </button>
         </div>
       </div>
-      <Menu as="div" className={`md:hidden ${isOpen ? "block" : "hidden"}`}>
+      <Menu as="div" className={`md:hidden ${isOpen ? "block" : "hidden"} `}>
         <Menu.Items
           static
-          className="mt-2 space-y-2 text-gray-800 bg-white left-0 top-12 py-12 px-8 shadow-lg fixed"
+          className="mt-2 space-y-2 text-gray-800 bg-white z-50 right-0 top-12 py-12 px-8 shadow-lg fixed"
         >
           <Menu.Item>
             {({ active }) => (
               <a
                 href="#about"
+                onClick={() => setIsOpen(false)}
                 className={`block px-4 py-2 ${active ? "bg-blue-500" : ""}`}
               >
                 About
@@ -79,6 +69,7 @@ const Navbar = () => {
             {({ active }) => (
               <a
                 href="#skills"
+                onClick={() => setIsOpen(false)}
                 className={`block px-4 py-2 ${active ? "bg-blue-500" : ""}`}
               >
                 Skills
@@ -89,6 +80,7 @@ const Navbar = () => {
             {({ active }) => (
               <a
                 href="#portfolio"
+                onClick={() => setIsOpen(false)}
                 className={`block px-4 py-2 ${active ? "bg-blue-500" : ""}`}
               >
                 Portfolio
@@ -99,6 +91,7 @@ const Navbar = () => {
             {({ active }) => (
               <a
                 href="#work"
+                onClick={() => setIsOpen(false)}
                 className={`block px-4 py-2 ${active ? "bg-blue-500" : ""}`}
               >
                 Career
@@ -109,6 +102,7 @@ const Navbar = () => {
             {({ active }) => (
               <a
                 href="#contact"
+                onClick={() => setIsOpen(false)}
                 className={`block px-4 py-2 ${active ? "bg-blue-500" : ""}`}
               >
                 Contact
