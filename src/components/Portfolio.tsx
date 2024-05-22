@@ -25,10 +25,10 @@ const Portfolio = () => (
               ))}
             </div>
             <div className="flex justify-start items-center w-full gap-2 self-end">
-              <a href={project.github}>
+              <a href={project.github} target="_blank">
                 <img src="/assets/icons/github-dark.svg" className="w-[24px]" />
               </a>
-              <a href={project.visit}>
+              <a href={project.visit} target="_blank">
                 <img src="/assets/icons/globe.svg" className="w-[24px]" />
               </a>
             </div>
