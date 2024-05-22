@@ -29,6 +29,12 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
+        <a
+          href="#header"
+          className=" fixed md:top-5 top-4 md:left-5 left-5 md:text-4xl text-2xl font-bold text-indigo-500 cursor-pointer"
+        >
+          M.
+        </a>
         <div className="md:hidden fixed">
           <button onClick={toggleMenu} aria-label="Menu">
             {isOpen ? (
