@@ -3,7 +3,7 @@ const Work = () => (
     id="work"
     className="py-10 flex flex-col justify-center items-start gap-8"
   >
-    <h2 className="text-3xl font-bold">
+    <h2 className="sm:text-3xl text-2xl font-bold">
       <span className="text-indigo-500">04. </span> &lt;my working career&gt;
     </h2>
     <ul className="mt-5 space-y-4">
@@ -14,7 +14,7 @@ const Work = () => (
         <strong>Inter Frontend Engineer</strong> @ Pomtech, 2023 - Present
       </li>
     </ul>
-    <h2 className="text-3xl font-bold text-gray-300 self-end">
+    <h2 className="sm:text-3xl text-2xl font-bold text-gray-300 self-end">
       &lt;/my working career&gt;
     </h2>
   </section>

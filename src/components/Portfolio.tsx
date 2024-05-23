@@ -4,7 +4,7 @@ const Portfolio = () => (
     id="portfolio"
     className="py-10 flex flex-col justify-center items-start gap-8"
   >
-    <h2 className="text-3xl font-bold">
+    <h2 className="sm:text-3xl text-2xl font-bold">
       <span className="text-indigo-500">03. </span> &lt;my portfolio&gt;
     </h2>
     <div className="mt-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-between items-center w-full gap-8">
@@ -36,7 +36,7 @@ const Portfolio = () => (
         </div>
       ))}
     </div>
-    <h2 className="text-3xl font-bold text-gray-300 self-end">
+    <h2 className="sm:text-3xl text-2xl font-bold text-gray-300 self-end">
       &lt;/my portfolio&gt;
     </h2>
   </section>

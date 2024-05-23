@@ -6,7 +6,7 @@ const Contact = () => (
     className="py-10 flex flex-col justify-center items-start gap-8"
   >
     <div className="w-full flex flex-col items-start">
-      <h2 className="text-3xl font-bold">
+      <h2 className="sm:text-3xl text-2xl font-bold">
         <span className="text-indigo-500">05. </span> &lt;get in touch&gt;
       </h2>
       <p className="mt-5">
@@ -20,7 +20,7 @@ const Contact = () => (
         <Icon icon="mdi:email" className="mr-2" /> Say Hello!
       </a>
     </div>
-    <h2 className="text-3xl font-bold text-gray-300 self-end">
+    <h2 className="sm:text-3xl text-2xl font-bold text-gray-300 self-end">
       &lt;/get in touch&gt;
     </h2>
   </section>
