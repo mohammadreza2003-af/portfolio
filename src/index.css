@@ -6,3 +6,6 @@
 * {
     scroll-behavior: smooth;
 }
+.card:hover .img-card {
+    transform: scale(110%);
+}

@@ -58,7 +58,7 @@ const Navbar = () => {
       <Menu as="div" className={`md:hidden ${isOpen ? "block" : "hidden"} `}>
         <Menu.Items
           static
-          className="mt-2 space-y-2 text-gray-800 bg-white z-50 right-0 top-12 py-12 px-8 shadow-lg fixed"
+          className="mt-2 space-y-2 text-gray-800 bg-white  z-50 right-0 top-12 py-12 px-8 shadow-lg fixed"
         >
           <Menu.Item>
             {({ active }) => (
